@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Interactive installation manual for Uponor Vario S Manifold with step-by-step video guides, technical specifications, and multi-language support.">
+    <meta name="keywords" content="Uponor, Vario S, Manifold, Installation Manual, Interactive Guide">
+    <meta name="author" content="Uponor">
+
+    <!-- Open Graph / Social Media -->
+    <meta property="og:title" content="Uponor Interactive Manual - Vario S Manifold">
+    <meta property="og:description" content="Step-by-step interactive installation guide with video tutorials">
+    <meta property="og:type" content="website">
+
+    <title>Uponor Interactive Manual - Vario S Manifold</title>
+    <link rel="preload" href="1140836_vario S manifold fm.svg" as="image" type="image/svg+xml">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- LANDING PAGE -->
+    <div id="landing-page">
+        <header class="landing-header">
+            <div class="landing-content">
+                <h1 class="landing-title">Uponor Vario S Manifold FM</h1>
+
+
+                <div class="version-badge">
+                    <span class="version-dot"></span> Version 1.0 | 02.2026
+                </div>
+
+                <div class="landing-actions">
+                    <a href="Uponor _IM_Vario_S_manifold_FM_1143222_v2_202412.pdf" download target="_blank"
+                        style="text-decoration: none;">
+                        <button class="btn-download">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                                <polyline points="7 10 12 15 17 10"></polyline>
+                                <line x1="12" y1="15" x2="12" y2="3"></line>
+                            </svg>
+                            Download Manual (PDF)
+                        </button>
+                    </a>
+                    <button id="view-manual-btn" class="btn-view">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+                            <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+                        </svg>
+                        View Interactive Manual
+                    </button>
+                </div>
+            </div>
+
+            <div class="landing-image-container">
+                <img src="1140836_vario S manifold fm.svg" alt="Vario S Manifold FM" class="landing-hero-image"
+                    fetchpriority="high">
+            </div>
+        </header>
+
+        <div class="landing-footer-actions">
+            <div class="support-card">
+                <p>Need technical assistance?</p>
+                <a href="https://www.uponor.com/en-en/services/contacts" target="_blank" style="text-decoration: none;">
+                    <button class="btn-support">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path
+                                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                            </path>
+                        </svg>
+                        Contact
+                    </button>
+                </a>
+            </div>
+        </div>
+
+        <footer class="landing-footer">
+            <div class="footer-logo">
+                <img src="aspirella_logo.svg" alt="Company Logo" style="height: 60px; opacity: 1;" loading="lazy">
+            </div>
+            <p><i>Crafted by</i> <strong>Aspirella Technodocs Private Limited</strong> </p>
+        </footer>
+    </div>
+
+    <!-- MAIN APP (Hidden initially) -->
+    <div class="app-container hidden">
+        <!-- LEFT SIDEBAR: Navigation -->
+        <aside class="sidebar-left">
+            <div class="sidebar-header">
+                <div class="brand-logo">
+                    <img src="GF_Logo.png" alt="Company Logo" class="logo-image" loading="lazy">
+                </div>
+                <div class="theme-toggle-container">
+                    <label class="switch" aria-label="Toggle dark mode">
+                        <input type="checkbox" id="theme-toggle" aria-label="Dark mode toggle">
+                        <span class="slider round"></span>
+                    </label>
+                    <span class="theme-label" id="theme-label">Light</span>
+                </div>
+            </div>
+
+            <!-- New Language Selector Container -->
+            <div id="language-selector-container"></div>
+
+            <div class="sidebar-title" data-i18n="installation_process">Installation Process</div>
+
+            <nav class="nav-menu" role="navigation" aria-label="Installation steps">
+                <ul>
+                    <li class="nav-item active" data-step="2" role="button" tabindex="0" aria-label="Dimensions step">
+                        <img src="Dimensions.svg" alt="" class="nav-icon-img" aria-hidden="true">
+                        <span class="step-label" data-i18n="nav_dimensions">Dimensions</span>
+                    </li>
+                    <li class="nav-item" data-step="3" role="button" tabindex="0" aria-label="Installation step">
+                        <img src="puzzle_mounting.svg" alt="" class="nav-icon-img" aria-hidden="true">
+                        <span class="step-label" data-i18n="nav_installation">Installation</span>
+                    </li>
+                    <li class="nav-item" data-step="4" role="button" tabindex="0" aria-label="Flushing step">
+                        <img src="Flushing.svg" alt="" class="nav-icon-img" aria-hidden="true">
+                        <span class="step-label" data-i18n="nav_flushing">Flushing</span>
+                    </li>
+                    <li class="nav-item" data-step="5" role="button" tabindex="0" aria-label="Pressure test step">
+                        <img src="Pressure-test.svg" alt="" class="nav-icon-img" aria-hidden="true">
+                        <span class="step-label" data-i18n="nav_pressure">Pressure test</span>
+                    </li>
+                    <li class="nav-item" data-step="6" role="button" tabindex="0" aria-label="Operation step">
+                        <img src="operation.svg" alt="" class="nav-icon-img" aria-hidden="true">
+                        <span class="step-label" data-i18n="nav_operation">Operation</span>
+                    </li>
+                    <li class="nav-item" data-step="10" role="button" tabindex="0" aria-label="Notes section">
+                        <img src="Notes.svg" alt="" class="nav-icon-img" aria-hidden="true">
+                        <span class="step-label" data-i18n="nav_notes">Note</span>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- CENTER STAGE: Visual/GIF Area -->
+        <main class="main-content">
+            <!-- Video Player UI Container -->
+            <div class="video-player-container">
+                <div class="video-wrapper" id="visual-container">
+                    <img id="main-image" src="dimensions.gif" class="step-visual" alt="Step visual" />
+
+                </div>
+
+                <button id="replayBtn" class="replay-btn hidden" data-i18n="btn_replay">
+                    Replay
+                </button>
+
+
+                <!-- RIGHT SIDEBAR: Tools -->
+                <div class="step-info">
+                    <h2 id="current-step-title">Table of Content</h2>
+                    <p class="step-description" id="current-step-desc">Review the cutting table specifications before
+                        proceeding.</p>
+                </div>
+        </main>
+
+        <!-- RIGHT SIDEBAR: Tools -->
+        <aside class="sidebar-right" role="complementary" aria-label="Checklist and specifications">
+            <!-- Top Section: Checklist -->
+            <section class="tool-section checklist-section">
+                <h3 data-i18n="sidebar_checklist"><span class="icon" aria-hidden="true">✓</span> Checklist</h3>
+                <div class="checklist-container" id="checklist-container" role="list">
+                    <!-- Checklist items will be injected via JS -->
+                </div>
+            </section>
+
+            <!-- Bottom Section: Technical Specs -->
+            <section class="tool-section specs-section">
+                <div class="specs-content" id="specs-container" role="list">
+                    <!-- Specs items will be injected via JS -->
+                </div>
+            </section>
+        </aside>
+    </div>
+
+    <!-- BRANDING PAGE -->
+    <div id="branding-page" class="hidden">
+        <header class="landing-header">
+            <div class="landing-content">
+                <h1 class="landing-title">
+                    Excellence Comes From Experience
+                </h1>
+                <div class="landing-actions">
+                    <button id="back-to-manual-btn" class="btn-view">
+                        ← Back to Manual
+                    </button>
+                </div>
+            </div>
+
+        </header>
+
+        <footer class="landing-footer"
+            style="text-align: left; padding-top: 40px; padding-bottom: 40px; font-family: 'Avenir Next'">
+            <h2 style="font-size: 32px; font-weight: 800; color: #ffffff; margin-bottom: 20px; line-height: 1.1;">
+                Accuracy<br>
+                Without<br>
+                Ambiguity
+            </h2>
+            <p style="font-size: 15px; color: #000000   ; font-weight: 500; opacity: 0.8; letter-spacing: 0.5px;">
+                Built for <img src="Aspirella Style Speed Arrow.svg"
+                    style="height: 15px; margin: 0 4px; vertical-align: middle; font-family: 'Avenir Next'; filter: brightness(0) invert(1);"
+                    alt="icon">
+                at <strong style="color: #ffffff">ASPIRELLA</strong>, India
+            </p>
+        </footer>
+    </div>
+
+    <script src="./translations.js" defer></script>
+    <script src="./i18n.js" defer></script>
+    <script src="./app.js" defer></script>
+
+</body>
+
+</html>
